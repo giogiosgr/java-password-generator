@@ -8,6 +8,7 @@ public class PasswordGenerator {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		//serie di input
 		System.out.println("Inserire nome utente: ");
 		String firstName = sc.next();
 		
@@ -16,20 +17,19 @@ public class PasswordGenerator {
 		
 		System.out.println("Inserire colore preferito: ");
 		String color = sc.next();
+		
+		System.out.println("Inserire data di nascita nel formato gg/mm/aaaa: ");
+		String date = sc.next();
 
-		System.out.println("Inserire giorno di nascita: ");
-		int day = sc.nextInt();
-		
-		System.out.println("Inserire mese di nascita: ");
-		int month = sc.nextInt();
-		
-		System.out.println("Inserire anno di nascita: ");
-		int year = sc.nextInt();
-		
-        int sum = day + month + year;
-        
+		//qui si splitta la stringa con la data con separatore '/'
+		String[] datef = date.split("/");
+		//poi si convertono le tre parti dell'array risultante in intero, facendo la somma
+        int sum = Integer.parseInt(datef[0]) + Integer.parseInt(datef[1]) + Integer.parseInt(datef[2]);
+   
+        //concatenazione di ogni parte
         String password = firstName+lastName+color+sum;
         
+        //output
         System.out.printf("La password risultante è: %s", password);
 		
 	}
