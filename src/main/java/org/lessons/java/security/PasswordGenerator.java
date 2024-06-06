@@ -10,16 +10,16 @@ public class PasswordGenerator {
 		
 		//serie di input
 		System.out.println("Inserire nome utente: ");
-		String firstName = sc.next();
+		String firstName = sc.nextLine();
 		
 		System.out.println("Inserire cognome utente: ");
-		String lastName = sc.next();
+		String lastName = sc.nextLine();
 		
 		System.out.println("Inserire colore preferito: ");
-		String color = sc.next();
+		String color = sc.nextLine();
 		
 		System.out.println("Inserire data di nascita nel formato gg/mm/aaaa: ");
-		String date = sc.next();
+		String date = sc.nextLine();
 		
 		sc.close();
 
