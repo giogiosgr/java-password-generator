@@ -20,6 +20,8 @@ public class PasswordGenerator {
 		
 		System.out.println("Inserire data di nascita nel formato gg/mm/aaaa: ");
 		String date = sc.next();
+		
+		sc.close();
 
 		//qui si splitta la stringa con la data con separatore '/'
 		String[] datef = date.split("/");
