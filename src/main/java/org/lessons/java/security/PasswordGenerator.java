@@ -27,7 +27,7 @@ public class PasswordGenerator {
         int sum = Integer.parseInt(datef[0]) + Integer.parseInt(datef[1]) + Integer.parseInt(datef[2]);
    
         //concatenazione di ogni parte
-        String password = firstName+lastName+color+sum;
+        String password = firstName + "-" + lastName + "-" + color + "-" + sum;
         
         //output
         System.out.printf("La password risultante è: %s", password);
